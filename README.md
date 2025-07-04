@@ -10,7 +10,6 @@ A basic full-stack travel website where users can browse and manage hotel listin
 - 🌐 RESTful routing using Express
 - 📄 Server-side rendering with EJS
 - 🗃️ MongoDB integration with Mongoose
-- 📦 Follows MVC project structure
 - 🔒 Basic input validation and route handling
 
 ---
