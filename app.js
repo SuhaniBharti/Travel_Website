@@ -31,9 +31,9 @@ app.use(methodOverride("_method"));
 app.engine('ejs',ejsMate);
 app.use(express.static(path.join(__dirname,"/public")));
 const port=8080;
-app.get("/",(req,res)=>{
-    res.send("i a root");
-});
+// app.get("/",(req,res)=>{
+//     res.send("i a root");
+// });
 
 app.listen(8080,()=>{
     console.log("server started listening on port 8080");
@@ -41,7 +41,7 @@ app.listen(8080,()=>{
 
 
 
-app.get("/listings",async(req,res)=>{
+app.get("/",async(req,res)=>{
    const allListings=await Listing.find({});
    res.render("listings/index.ejs",{allListings});
     });
