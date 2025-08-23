@@ -1,49 +1,24 @@
-<% layout("/layouts/boilerplate") %>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WanderLust</title>
+    <Link rel="stylesheet" href="/css/style.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
 
-<!-- Hero Section -->
-<div class="p-5 mb-4 bg-light rounded-3 text-center" style="background: url('/images/travel-bg.jpg') center/cover no-repeat; min-height: 80vh; display: flex; align-items: center; justify-content: center;">
-  <div class="container py-5" style="background-color: rgba(0,0,0,0.55); border-radius: 12px;">
-    <h1 class="display-4 fw-bold text-white">🌍 Welcome to Wander Enthusiast</h1>
-    <p class="fs-5 text-light mb-4">Discover breathtaking destinations, plan your journeys, and create memories that last forever.</p>
-    <a href="/listings" class="btn btn-warning btn-lg fw-semibold shadow">Explore Listings</a>
-  </div>
-</div>
-
-<!-- Why Choose Us -->
-<div class="container text-center my-5">
-  <h2 class="fw-bold mb-3">✨ Why Choose Wander Enthusiast?</h2>
-  <p class="text-muted fs-5 mb-5">
-    We bring together the most exciting travel spots, hidden gems, and authentic experiences 
-    to fuel your wanderlust. Whether you’re a solo traveler, a family explorer, or an adventure seeker – 
-    we’ve got something for you!
-  </p>
-
-  <div class="row g-4">
-    <div class="col-md-4">
-      <div class="card shadow-sm h-100 border-0">
-        <div class="card-body text-center">
-          <h3 class="card-title">🌄 Adventure Trips</h3>
-          <p class="card-text text-muted">Explore mountains, jungles, and thrilling escapes.</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-md-4">
-      <div class="card shadow-sm h-100 border-0">
-        <div class="card-body text-center">
-          <h3 class="card-title">🏖️ Relaxing Beaches</h3>
-          <p class="card-text text-muted">Find your perfect getaway with crystal-clear waters.</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-md-4">
-      <div class="card shadow-sm h-100 border-0">
-        <div class="card-body text-center">
-          <h3 class="card-title">🏙️ Urban Explorations</h3>
-          <p class="card-text text-muted">Discover city life, nightlife, and hidden cafes.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+</head>
+<body>
+    <%- include("../includes/navbar.ejs")%>
+  
+       <div class="container">
+           <%- body -%>
+       </div>  
+       <%- include("../includes/footer.ejs")%>
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+</body>
+</html>
