@@ -33,7 +33,7 @@ app.use(express.static(path.join(__dirname,"/public")));
 const port=8080;
 app.get("/",(req,res)=>{
     //res.send("i a root");
-    res.render("/home.ejs");
+    res.render("listings/home");
 });
 
 app.listen(8080,()=>{
